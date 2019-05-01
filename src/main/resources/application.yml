@@ -1,0 +1,15 @@
+cloud:
+  aws:
+    credentials:
+      # アクセスキー ID
+      accessKey: ${AWS_ACCESS_KEY_ID}
+      # シークレットアクセスキー
+      secretKey: ${AWS_SECRET_ACCESS_KEY}
+    stack:
+      # CloudFormationのスタック名を自動取得しない
+      auto: false
+    region:
+      # リージョン名を自動取得しない
+      auto: false
+      # リージョン名（例. ap-northeast-1）
+      static: ${AWS_REGION}
